@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>HoneyMoney: Новая операция</title>
+	<meta name="Stepan.Panov" content="NoneyMoney">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+	<link rel="icon" type="image/x-icon" href="/icon/honey.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header></header>
+	<main>
+        <div class="container">
+              <div class="row">
+                <div class="col"></div>
+                <div class="col-8 gy-5">
+                   <label for="Date_operation" class="form-label">Дата операции:</label>
+                   <div class="mb-3">
+                       <input id="Date_operation" class="form-control" type="date" />
+                   </div>
+
+                   <label  class="form-label">Тип опреации:</label>
+                    <div class="mb-4">
+                        <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+                        <label class="btn btn-outline-success" for="success-outlined">Пополнение</label>
+                        <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                        <label class="btn btn-outline-danger" for="danger-outlined">Списание</label>
+                    </div>
+                    
+                    <label  class="form-label">Статья операции:</label>
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Пример выбора по умолчанию">
+                          <option selected>Выберать</option>
+                          <option value="🚕">Такси 🚕</option>
+                          <option value="🛒">Продукты 🛒</option>
+                          <option value="💊">Аптека 💊</option>
+                        </select>
+                    </div>
+
+                    <label  class="form-label">Валюта:</label>
+                    <div class="mb-3">
+                        <input type="radio" class="btn-check" id="AMD" name="options-outlined" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="AMD">AMD</label>
+                        <input type="radio" class="btn-check" id="RUB" name="options-outlined" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="RUB">RUB</label>
+                        <input type="radio" class="btn-check" name="options-outlined" id="USD" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="USD">USD</label>
+                    </div>
+
+                      <div class="mb-4">
+                        <label for="amount" class="form-label">Сумма:</label>
+                        <input type="number" class="form-control" id="amount" aria-describedby="amountHelp">
+                      </div>
+
+                      <label  class="form-label">Автор операции:</label>
+                      <div class="mb-4">
+                        <select class="form-select" aria-label="Стёпа">
+                          <option selected>Выбрать</option>
+                          <option value="🚕">Стёпа</option>
+                          <option value="🛒">Лола</option>
+                        </select>
+                      </div>
+                      
+                      <label  class="form-label">Комментарий:</label>
+                      <div class="mb-3">
+                        <textarea class="form-control" aria-label="With textarea" onkeypress="if(this.value.length&gt;254) return alert('Допускается максимум 255 символов');" maxlength="255"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Отправить</button>
+                </div>
+                <div class="col"></div>
+              </div>
+        </div>
+    </main>
+	<footer></footer>
+    <script src="https://kit.fontawesome.com/eda28f2ebc.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
