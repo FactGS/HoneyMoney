@@ -29,9 +29,9 @@
                    <label  class="form-label">Тип опреации:</label>
                     <div class="mb-4">
                         <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
-                        <label class="btn btn-outline-success" for="success-outlined">Пополнение</label>
+                        <label class="btn btn-outline-success" for="success-outlined">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;</label>
                         <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
-                        <label class="btn btn-outline-danger" for="danger-outlined">Списание</label>
+                        <label class="btn btn-outline-danger" for="danger-outlined">&nbsp;&nbsp;&nbsp;—&nbsp;&nbsp;&nbsp;</label>
                     </div>
                     
                     <label  class="form-label">Статья операции:</label>
@@ -70,7 +70,7 @@
                       
                       <label  class="form-label">Комментарий:</label>
                       <div class="mb-3">
-                        <textarea class="form-control" aria-label="With textarea" onkeypress="if(this.value.length&gt;254) return alert('Допускается максимум 255 символов');" maxlength="255"></textarea>
+                        <textarea class="form-control" aria-label="With textarea" maxlength="120" onkeypress="if(this.value.length&gt;119) return alert('Допускается максимум 255 символов');"></textarea>
                       </div>
                       <button type="submit" class="btn btn-primary">Отправить</button>
                 </div>
